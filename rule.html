@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start</title>
+    <link rel="stylesheet" type="text/css" href="rule.css">
+
+</head>
+<body >
+    <div id="titel">
+        <span style='font-size: 14px;'>Vorbereitungsrunde</span><br>
+        <span style='font-size: 30px;'>Spielregeln</span>
+    </div>
+    <div id="rules" style="display: none;">
+        <span id="span1"></span><br>
+        <span id="span2"></span>
+    </div>
+    <div id="text" style="display: none;">
+        <span style='font-size: 25px;'>Spielhintergrund</span><br>
+        <span style='font-size: 14px;'>Die Spieler spielen als "transparenter Regenbogen".Der Prozess, in dem sich Schwule outen, ist wie ein trans- parenter Regenbogen auf der Suche nach seinen Farben.</span><br><br>
+        <span style='font-size: 25px;'>Spielverlauf</span><br>
+        <span style='font-size: 14px;'>Erste Runde, Ausdruck der Selbstidentität.Die nächste Runde stellt eine bestimmte psychologische Phase der Eltern dar, nachdem sich das Kind geoutet hat.Der Spieler muss die Fragen beantworten, die die Eltern in dieser Runde stellen könnten.</span><br><br>
+        <span style='font-size: 25px;'>Runde und Belohnungen</span><br>
+        <span style='font-size: 14px;'>Der Spieler erhält für jede Runde, in der er erfolgreich mit dem Elter redet, eine bestimmte Farbe des Regenbogens</span><br><br>
+        <span style='font-size: 25px;'>Die Siegbedingungen</span><br>
+        <span style='font-size: 14px;'>Der Spieler hat in allen Runden alle Farben des Regenbo- gens gesammelt und das Verständnis und die Akzeptanz seiner Eltern im Spiel gewonnen.</span><br><br>
+
+    </div>
+
+    <div id="buttons" style="display: none;">
+        <div id="next_rule" onclick="submit_step('next')"></div>            
+        <img src="arrow_black.png" id="arrows_next" onclick="submit_step('next')">
+        <div id="previous_rule" onclick="submit_step('previous')"></div>            
+        <img src="arrow_black.png" id="arrows_previous" onclick="submit_step('previous')">
+
+    </div>
+
+    </div>
+    <img id="bot" src="bot.png">
+
+    <script src="rule.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start</title>
+    <link rel="stylesheet" type="text/css" href="start_page.css">
+
+</head>
+<body >
+    <div id="uebung"  onclick="click_button('uebung')">ÜBUNG</div>
+    <div id="jiashu" onclick="click_button('jiashu')">家书</div>
+    <img id="top" src="top.png">
+    <img id="bot" src="bot.png">
+
+<script>
+    function go_uebung() {
+    window.location.href = 'rule.html';} 
+    function go_jiashu() {
+    window.location.href = 'jiashu/index.html';} 
+    function click_button (id) {
+        var button = document.getElementById(id);
+        button.style.backgroundColor = "#121212";
+        button.style.color = "#FFFFFF";
+        button.style.boxShadow = "0px 2px 6px 0px rgba(100, 100, 100, 0.3)";
+        if (id == "uebung") {
+            setTimeout(go_uebung, 300);
+        } else {
+            setTimeout(go_jiashu, 300);
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
+

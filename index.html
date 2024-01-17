@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>v2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+    <img src="arrow_yellow.png" id="quit" onclick="location.href = 'start_page.html';" style="display:none;">
+    <div id="titels" style="display: none;"></div>
+    <div id="question"></div>
+    <div id="part2_text" style="display:none;"></div>
+    <div id="pass_text" style="display:none;"></div>
+    <div id="part1-answers">
+        <button id="buttonJa" onclick="submitAnswer(true)">JA</button>
+        <button id="buttonNein" onclick="submitAnswer(false)">NEIN</button>
+    </div>
+    <div id="part2-answers" style="display:none;">
+        <div id="part2_button" >
+            <button id="buttonA" onclick="submitAnswer('A')">A</button>
+            <button id="buttonB" onclick="submitAnswer('B')">B</button>
+            <button id="buttonC" onclick="submitAnswer('C')">C</button>
+            <button id="buttonD" onclick="submitAnswer('D')">D</button>
+        </div>
+    </div>
+    <button id="buttonNextQustion" onclick="nextQuestion()" style="display:none;">Überspringen</button>
+    <button id="skip" onclick="skip()" style="position: absolute;top:0px;left:260px;width:120px;height:20px;z-index:6;">Überspringen</button>
+    <button id="submit_right" onclick="submit_right()" style="position: absolute;top:25px;left:260px;width:120px;height:20px;z-index:6;display:none;">Richtig</button>
+
+    <div id="score">
+        <img src="yellow1.png" id="img1" style="position: absolute; top: 382px;left:0;z-index:5;">
+        <img src="yellow2.png" id="img2" style="position: absolute; top: 273px;left:0;z-index:4;display:none;">
+        <img src="yellow3.png" id="img3" style="position: absolute; top: 152px;left:0;z-index:3;display:none;">
+        <img src="yellow3b.png" id="img3b" style="position: absolute; top: 152px;left:0;z-index:3;display:none;">
+        <img src="yellow4.png" id="img4" style="position: absolute; top: 0px;left:0;z-index:2;display:none;">
+        <img src="yellow5.png" id="img5" style="position: absolute; top: 0px;left:0;z-index:1;display:none;">
+    </div>
+    <div id="finish_bow">
+        <img src="finish/yellow.png" id="img_finish" style="position: absolute; top: 382px;left:0;z-index:5;display: none;">
+    </div>
+    <div id="feedback" style="position: absolute;top:0px;left:30px;width:200px;height:20px;z-index:6;font-size:12px;display:block;">part 1, Q1, score: 0</div>
+    <div id="continue_text"></div>
+     
+    <script src="script.js"></script>
+</body>
+</html>

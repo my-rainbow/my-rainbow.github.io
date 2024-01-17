@@ -1,0 +1,281 @@
+
+body {
+    font-family: Avenir;
+    color: #503A00;
+}
+@font-face {
+    font-family: AvenirH;
+    src: url('Avenir Heavy.ttf') 
+  }
+
+@font-face {
+    font-family: Avenir;
+    src: url('Avenir Medium.ttf') 
+  }
+#quit {
+    position: absolute;
+    top: 20px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 15px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 11px;
+    height: 20px;
+    margin: auto;
+    z-index: 7;
+}
+
+#titels {
+    position: absolute;
+    top: 52px;
+    left: 15px;
+    width: 361px;
+    height: 101px;
+    font-family: AvenirH;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    white-space: pre-line;
+}
+
+
+#question {
+    position: absolute;
+    top: 60px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 15px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 378px;
+    height: 700px;
+    margin: auto;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: -0.02em;
+    white-space: pre-line;
+    line-height: 30px;
+    font-family: Avenir;
+    z-index: 6;
+}
+#part2_text {
+    position: absolute;
+    top: 60px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 13px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 400px;
+    height: 610px;
+    margin: auto;
+    text-align: left;
+    white-space: pre-line;
+    font-family: Avenir;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #121212;
+    
+}
+
+#pass_text {
+    position: absolute;
+    top: 60px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 13px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 400px;
+    height: 610px;
+    margin: auto;
+    text-align: left;
+    white-space: pre-line;
+    font-family: AvenirH;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+#continue_text {
+    font-family: AvenirH;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    width: 361px;
+    height: 120px;
+    position: absolute;
+    top: 60px;
+    left: 16px;
+    color: #FFFFFF;
+    white-space: pre-line;
+    z-index: 6;
+    display: none
+}
+
+#buttonJa {
+    position: absolute;
+    top: 497px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 135px;
+    height: 77px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px 0px rgba(191, 139, 0, 0.1);
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: -0.03em;
+    line-height: 40px;
+    font-family: AvenirH;
+    border:0;
+    border-radius: 40px;
+    z-index: 6;
+}
+
+#buttonNein {
+    position: absolute;    
+    top: 497px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 221px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 135px;
+    height: 77px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px 0px rgba(191, 139, 0, 0.1);
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: -0.03em;
+    line-height: 40px;
+    font-family: AvenirH;
+    border:0;
+    border-radius: 40px;
+    z-index: 6;
+
+ 
+}
+
+#buttonA {
+    position: absolute;
+    top: 442px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 320px;
+    height: 42px;
+    font-size: 14px;
+    font-family: Avenir;
+    color: black;
+    background-color: white;
+    margin: auto;
+    border-color: black;
+    border-radius: 27px;
+    cursor: pointer;
+    text-align: left;
+    z-index: 6;
+    border:0;
+    box-shadow: 0px 1px 5px 0px rgba(0, 111, 193, 0.1);
+    padding-left: 21px;
+    padding-right: 0px;
+
+}
+#buttonB {
+    position: absolute;
+    top: 493px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 320px;
+    height: 42px;
+    font-size: 14px;
+    font-family: Avenir;
+    color: black;
+    background-color: white;
+    margin: auto;
+    border-color: black;
+    border-radius: 27px;
+    cursor: pointer;
+    text-align: left;
+    z-index: 6;
+    border:0;
+    box-shadow: 0px 1px 5px 0px rgba(0, 111, 193, 0.1);
+    padding-left: 21px;
+    padding-right: 0px;
+
+}
+#buttonC {
+    position: absolute;
+    top: 544px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 320px;
+    height: 42px;
+    font-size: 14px;
+    font-family: Avenir;
+    color: black;
+    background-color: white;
+    margin: auto;
+    border-color: black;
+    border-radius: 27px;
+    cursor: pointer;
+    text-align: left;
+    z-index: 6;
+    border:0;
+    box-shadow: 0px 1px 5px 0px rgba(0, 111, 193, 0.1);
+    padding-left: 21px;
+    padding-right: 0px;
+
+}
+#buttonD {
+    position: absolute;
+    top: 595px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 320px;
+    height: 42px;
+    font-size: 14px;
+    font-family: Avenir;
+    color: black;
+    background-color: white;
+    margin: auto;
+    border-color: black;
+    border-radius: 27px;
+    cursor: pointer;
+    text-align: left;
+    z-index: 6;
+    border:0;
+    box-shadow: 0px 1px 5px 0px rgba(0, 111, 193, 0.1);
+    white-space: pre-line;
+    padding-left: 21px;
+    padding-right: 0px;
+
+}
+
+#endQuiz {
+    position: absolute;
+    top: 600px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 200px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 120px;
+    height: 51px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    margin: auto;
+    border-color: black;
+    border-radius: 25px;
+    border:5px solid black;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
+#buttonNextQustion {
+    position: absolute;
+    top: 600px; /* 距离最近的已定位祖先元素顶部 50px */
+    left: 200px; /* 距离最近的已定位祖先元素右边 30px */
+    width: 120px;
+    height: 51px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    margin: auto;
+    border-color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: left;
+}
+/*#feedback {
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 20px; 
+    left: 115px;
+}*/
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}

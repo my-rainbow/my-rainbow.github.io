@@ -1,0 +1,79 @@
+
+body {
+    font-family: Avenir;
+    color: #503A00;
+    background: #F1F1F1;
+
+}
+@font-face {
+    font-family: AvenirH;
+    src: url('Avenir Heavy.ttf') 
+  }
+
+@font-face {
+    font-family: Avenir;
+    src: url('Avenir Medium.ttf') 
+  }
+@font-face {
+  font-family: AlibabaBold;
+  src: url('Alibaba-PuHuiTi-Bold.ttf') 
+}
+#top {
+position: absolute;
+top: 0px;
+left: 0px;}
+
+#bot {
+  position: absolute;
+  top: 382px;
+  left: 0px;}
+
+#uebung {
+width:135px;
+height: 77px;
+position:absolute;
+top:90px;
+left:130px;
+border-radius: 40px;
+background: #FFFFFF ;
+color:#121212;
+box-shadow: 0px 2px 6px 0px rgba(199, 199, 199, 0.1);
+font-family: AvenirH;
+font-size: 25px;
+line-height: 81px;
+letter-spacing: 0em;
+text-align: center;
+z-index: 3;
+}
+
+
+#jiashu {
+width:135px;
+height:77px;
+position:absolute;
+top:497px;
+left:128px;
+border-radius: 40px;
+background: #FFFFFF ;
+color:#121212;
+box-shadow: 0px 2px 6px 0px rgba(199, 199, 199, 0.1);
+font-family: AlibabaBold;
+font-size: 25px;
+line-height: 77px;
+letter-spacing: 0em;
+text-align: center;
+z-index: 2;
+
+}
+
+#svg-container1 {
+    position: absolute;
+    top: -48px; /* 距离顶部的距离 */
+    left: 0px; /* 距离左侧的距离 */
+}
+
+#svg-container2 {
+    position: absolute;
+    top: 382px; /* 距离顶部的距离 */
+    left: 0px; /* 距离左侧的距离 */
+}
