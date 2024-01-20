@@ -760,18 +760,15 @@ function showResults_passed2() {
     document.getElementById('score').style.display = 'none';       
     document.getElementById('part2-answers').style.display = 'none';
 }
-
 function show_final() {
     document.getElementById('score').style.display = 'none';       
     document.getElementById('part2-answers').style.display = 'none';
     //document.getElementById('endQuiz').style.display = 'block';
     // 根据分数给出评价
     if (part_passed===6) {
-        document.getElementById('part2_text').style.display = 'none';
-        document.body.style.backgroundImage="url('pass_background.png')" ;
-        show_pass_text(final_text.pass,quit); 
+        window.location.href = 'pass_final.html';
     } else {
-        show_full_text(final_text.fail,quit); 
+        window.location.href = 'fail_final.html';
     }}
 function endQuiz() {
     let currentQuestionIndex = -1;

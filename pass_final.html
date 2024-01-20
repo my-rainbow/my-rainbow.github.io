@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>向上滚动的文本</title>
+    <style>
+        @font-face {
+            font-family: AvenirH;
+            src: url('Avenir Heavy.ttf') 
+        }
+        body {
+            background-image: url("pass_background.png")
+        };
+        #top {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 393px;
+            height: 60px;
+            z-index: 2;
+        }
+        .scrolling-text{
+            position: absolute;
+            top: 60px; /* 距离最近的已定位祖先元素顶部 50px */
+            left: 13px; /* 距离最近的已定位祖先元素右边 30px */
+            width: 362px;
+            height: 100%;
+            margin: auto;
+            text-align: left;
+            white-space: pre-line;
+            color: #FFF;
+
+            overflow: hidden; /* 隐藏超出容器的文本 */
+        } 
+        .scrolling-text p {
+            position: absolute;
+            width: 362px;
+            height: 100%;
+            color: #FFF;
+            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.20);
+            font-family: AvenirH;
+            font-size: 25px;
+            font-style: normal;
+            line-height: 30px; /* 120% */
+            letter-spacing: -0.5px;
+            margin: 0;
+            animation: scroll-up 39s linear forwards; /* 滚动动画 */
+        }
+
+        @keyframes scroll-up {
+            0% { top: 450px; }
+            100% { top: -100%; }
+        }
+
+        .line {
+            opacity: 0;
+            animation: fadeIn 3s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        #line1 { animation-delay: 1s; }
+        #line2 { animation-delay: 2s; }
+        #line3 { animation-delay: 3s; }
+        #line4 { animation-delay: 5s; }
+        #line5 { animation-delay: 6s; }
+        #line6 { animation-delay: 7s; }
+        #line7 { animation-delay: 8s; }
+        #line8 { animation-delay: 9s; }
+        #line9 { animation-delay: 10s; }
+        #line10 { animation-delay: 11s; }
+        #line11 { animation-delay: 12s; }
+        #line12 { animation-delay: 14s; }
+        #line13 { animation-delay: 15s; }
+        #line14 { animation-delay: 16s; }
+        #line15 { animation-delay: 17s; }
+        #line16 { animation-delay: 18s; }
+        #line17 { animation-delay: 20s; }
+        #line18 { animation-delay: 21s; }
+        #line19 { animation-delay: 22s; }
+        #line20 { animation-delay: 23s; }
+        #line21 { animation-delay: 25s; }
+        #line22 { animation-delay: 26s; }
+        #line23 { animation-delay: 27s; }
+        #line24 { animation-delay: 28s; }
+        #line25 { animation-delay: 29s; }
+        #line26 { animation-delay: 30s; }
+        #line27 { animation-delay: 31s; }
+        #line28 { animation-delay: 32s; }
+        #line29 { animation-delay: 33s; }
+        #line30 { animation-delay: 34s; }
+        #line31 { animation-delay: 35s; }
+        #line32 { animation-delay: 36s; }
+    </style>
+</head>
+<body>
+    <img id="top" src="pass_top.png">
+
+    <div class="scrolling-text">
+        <p>
+        <span id="line1" class="line">In jedem ehrlichen Dialog </span>
+        <span id="line2" class="line">bauen wir Brücken der </span>
+        <span id="line3" class="line">Liebe.<br></span>
+        <span id="line4" class="line">Wenn wir uns dazu ent-</span>
+        <span id="line5" class="line">schließen, unseren Eltern </span>
+        <span id="line6" class="line">unser wahres Ich zu offen-</span>
+        <span id="line7" class="line">baren, teilen wir nicht nur </span>
+        <span id="line8" class="line">ein Geheimnis, sondern </span>
+        <span id="line9" class="line">laden sie ein, unsere Welt </span>
+        <span id="line10" class="line">zu verstehen, die vielschi-</span>
+        <span id="line11" class="line">chtiger ist.<br></span>
+        <span id="line12" class="line">Dieser Weg kann eine Her</span>
+        <span id="line13" class="line">ausforderung sein, aber er</span>
+        <span id="line14" class="line">ist auch voller Möglichkei-</span>
+        <span id="line15" class="line">ten für Wachstum und Ver- </span>
+        <span id="line16" class="line">ständnis. <br></span>
+        <span id="line17" class="line">Vergessen Sie nicht, dass </span>
+        <span id="line18" class="line">wir alle den Wunsch haben,</span>
+        <span id="line19" class="line"> Glück und Spaß aneinander</span>
+        <span id="line20" class="line"> zu sehen.<br></span>
+        <span id="line21" class="line"> Auf der Reise dieses Spiels </span>
+        <span id="line22" class="line"> geht es nicht nur um das  </span>
+        <span id="line23" class="line"> Coming-out, sondern auch</span>
+        <span id="line24" class="line"> um Vertrauen, Kommuni-</span>
+        <span id="line25" class="line"> kation und Familienbande. </span>
+        <span id="line26" class="line"> Möge jeder von euch auf </span>
+        <span id="line27" class="line"> dieser Reise Mut und Inspi-</span>
+        <span id="line28" class="line"> ration finden, um denen, </span>
+        <span id="line29" class="line"> die wir lieben, den Weg zu </span>
+        <span id="line30" class="line"> ebnen und gemeinsam auf </span>
+        <span id="line31" class="line"> eine integrativere und liebe- </span>
+        <span id="line32" class="line"> vollere Zukunft zuzugehen.</span>
+        </p>
+    </div>
+<script>
+function quit() {
+    window.location.href = 'start_page.html';} 
+    setTimeout(quit, 43000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>向上滚动的文本</title>
+    <style>
+        body {
+    font-family: Avenir;
+    color: #503A00;
+    background: #F1F1F1;
+
+}
+        @font-face {
+            font-family: Avenir;
+            src: url('Avenir Medium.ttf') 
+        }
+        #top {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 393px;
+            height: 60px;
+            z-index: 2;
+        }
+        .scrolling-text{
+            position: absolute;
+            top: 60px; /* 距离最近的已定位祖先元素顶部 50px */
+            left: 13px; /* 距离最近的已定位祖先元素右边 30px */
+            width: 362px;
+            height: 100%;
+            margin: auto;
+            text-align: left;
+            white-space: pre-line;
+            color: #FFF;
+
+            overflow: hidden; /* 隐藏超出容器的文本 */
+        } 
+        .scrolling-text p {
+            position: absolute;
+            width: 362px;
+            height: 100%;
+            color: #121212;
+            font-family: Avenir;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 120% */
+            letter-spacing: -0.5px;
+            margin: 0;
+            animation: scroll-up 39s linear forwards; /* 滚动动画 */
+        }
+
+        @keyframes scroll-up {
+            0% { top: 450px; }
+            100% { top: -100%; }
+        }
+
+        .line {
+            opacity: 0;
+            animation: fadeIn 3s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        #line1 { animation-delay: 1s; }
+        #line2 { animation-delay: 2s; }
+        #line3 { animation-delay: 3s; }
+        #line4 { animation-delay: 4s; }
+        #line5 { animation-delay: 5s; }
+        #line6 { animation-delay: 7s; }
+        #line7 { animation-delay: 8s; }
+        #line8 { animation-delay: 9s; }
+        #line9 { animation-delay: 10s; }
+        #line10 { animation-delay: 11s; }
+        #line11 { animation-delay: 12s; }
+        #line12 { animation-delay: 14s; }
+        #line13 { animation-delay: 15s; }
+        #line14 { animation-delay: 16s; }
+        #line15 { animation-delay: 17s; }
+        #line16 { animation-delay: 18s; }
+        #line17 { animation-delay: 19s; }
+        #line18 { animation-delay: 20s; }
+        #line19 { animation-delay: 21s; }
+        #line20 { animation-delay: 22s; }
+        #line21 { animation-delay: 23s; }
+        #line22 { animation-delay: 25s; }
+        #line23 { animation-delay: 26s; }
+        #line24 { animation-delay: 27s; }
+        #line25 { animation-delay: 28s; }
+        #line26 { animation-delay: 29s; }
+        #line27 { animation-delay: 30s; }
+        #top_bar {
+            position: fixed;
+            top: 0px; /* 距离最近的已定位祖先元素顶部 50px */
+            left: 0px; /* 距离最近的已定位祖先元素右边 30px */
+            width: 393px;
+            height: 60px;
+            z-index: 7;
+            background: #F1F1F1;
+}
+    </style>
+</head>
+<body>
+    <div id="top_bar"></div>
+
+    <div class="scrolling-text">
+        <p>
+        <span id="line1" class="line">Auf dem Weg zu unserem</span>
+        <span id="line2" class="line">Coming-out sind wir mögli- </span>
+        <span id="line3" class="line">cherweise auf Unverständ-</span>
+        <span id="line4" class="line">nis und Verzögerungen bei </span>
+        <span id="line5" class="line">der Akzeptanz stoßen.<br></span>
+        <span id="line6" class="line">Aber denken Sie daran, </span>
+        <span id="line7" class="line">dass der Coming-out-Pro-</span>
+        <span id="line8" class="line">zess eine Reise der Selbst-</span>
+        <span id="line9" class="line"> bestätigung und eine Ver-</span>
+        <span id="line10" class="line">tiefung der Liebe zu Ihrer </span>
+        <span id="line11" class="line">Familie ist.<br></span>
+        <span id="line12" class="line">Es kann länger dauern, bis </span>
+        <span id="line13" class="line">unsere Eltern es verstehen, </span>
+        <span id="line14" class="line">aber es ist unsere Chance, </span>
+        <span id="line15" class="line"> Mut und Liebe zu zeigen.</span>
+        <span id="line16" class="line">Genauso wie sie uns einst </span>
+        <span id="line17" class="line">begleiteten, als wir das  </span>
+        <span id="line18" class="line">Laufen lernten. Jetzt sind </span>
+        <span id="line19" class="line"> wir es, die sie dazu bringen, </span>
+        <span id="line20" class="line"> eine vielfältigere Welt zu .</span>
+        <span id="line21" class="line">  verstehen<br></span>
+        <span id="line22" class="line">  Wir lieben sie weiterhin,  </span>
+        <span id="line23" class="line">wir drücken uns weiterhin  </span>
+        <span id="line24" class="line"> aus. Wir glauben weiterhin  </span>
+        <span id="line25" class="line"> daran, dass sie eines Tages</span>
+        <span id="line26" class="line">  an unserer Seite gehen </span>
+        <span id="line27" class="line"> werden.</span>
+
+        </p>
+    </div>
+<script>
+function quit() {
+    window.location.href = 'start_page.html';} 
+    setTimeout(quit, 43000);
+    </script>
+</body>
+</html>
