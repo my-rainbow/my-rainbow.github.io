@@ -138,7 +138,7 @@ function show_part2_text(text,next_function) {
     var container = document.getElementById('part2_text');
     var i = 0;
     var currentText = '';
-    //document.getElementById('skip').style.display = 'block';
+    document.getElementById('skip').style.display = 'block';
     document.getElementById('part2_text').style.display = 'block';
     document.getElementById('quit').style.display = 'none';
     document.body.style.backgroundColor = '#FFFFFF';
@@ -181,7 +181,7 @@ function show_full_text(text,next_function) {
     var container = document.getElementById('part2_text');
     var i = 0;
     var currentText = '';
-    //document.getElementById('skip').style.display = 'block';
+    document.getElementById('skip').style.display = 'block';
     document.getElementById('part2_text').style.display = 'block';
     document.getElementById('quit').style.display = 'none';
     interupted = false;
@@ -215,7 +215,7 @@ function show_pass_text(text,next_function) {
     var container = document.getElementById('pass_text');
     var i = 0;
     var currentText = '';
-    //document.getElementById('skip').style.display = 'block';
+    document.getElementById('skip').style.display = 'block';
     container.style.display = 'block';
     document.getElementById('quit').style.display = 'none';
     interupted = false;
@@ -416,15 +416,16 @@ function get_part_color() {
             shadow_color_nein='0px 2px 6px 0px rgba(191, 139, 0, 0.1)';
             document.getElementById('quit').src = 'arrow_yellow.png';
             text_color = '#503A00';
-
             break;
     };}
 // 显示问题的函数
 function displayQuestion() {
     //document.getElementById('submit_right').style.display = 'block';       
     document.getElementById('quit').style.display = 'block';
-    //document.getElementById('skip').style.display = 'block';
+    document.getElementById('skip').style.display = 'block';
     document.getElementById('feedback').textContent = "P"+part+", Q"+(currentPartQuestionIndex)+", Score"+score+", passed :"+part_passed;
+    question = current_part_questions[currentPartQuestionIndex];
+
     if (currentQuestionIndex === -1) {    
         show_score();
         start_part();  
@@ -433,7 +434,6 @@ function displayQuestion() {
     }
     else if (
         (part===1)&&(currentPartQuestionIndex<part1Questions.length)) {
-        question = current_part_questions[currentPartQuestionIndex];
         document.getElementById('titels').style.display = 'none';
         document.getElementById('question').style.display = 'block';
         document.getElementById('question').textContent = question.text;
@@ -446,27 +446,20 @@ function displayQuestion() {
         document.getElementById('buttonNein').style.backgroundColor = "#FFFFFF";
         document.getElementById('buttonNein').style.boxShadow = "0px 2px 6px 0px rgba(191, 139, 0, 0.1)";
         document.getElementById('buttonNein').style.color = "#FFC300";   
-
     } 
     else {
-        question = current_part_questions[currentPartQuestionIndex];
         document.getElementById('titels').style.display = 'none';
         document.getElementById('score').style.display = 'block';       
-        document.getElementById('buttonNextQustion').style.display = 'none';       
         document.getElementById('part2_text').style.display = 'none';
         document.getElementById('question').style.display = 'block';
         document.getElementById('part2-answers').style.display = 'block';
-
         //question = current_part[currentPartQuestionIndex];
         document.getElementById('question').style.color = text_color;
-
-
         //显示问题和选
         show_score();
         disableAnswerButtons();
         show_questions(question.text);
         //document.getElementById('question').innerHTML  = questionHtml;
-        document.getElementById('part2-answers').style.display = 'block';
         set_button_color();
         document.getElementById('buttonA').textContent = question.options[0];
         document.getElementById('buttonA').style.backgroundColor = "white"; 
@@ -590,7 +583,7 @@ function enableAnswerButtons() {
 function finish_part() {
     document.getElementById('quit').style.display = 'none';
     document.getElementById('submit_right').style.display = 'none';       
-    //document.getElementById('skip').style.display = 'none';
+    document.getElementById('skip').style.display = 'none';
     document.getElementById('question').style.display = 'none';
     document.getElementById('part1-answers').style.display = 'none';
     document.getElementById('part2-answers').style.display = 'none';
@@ -620,6 +613,8 @@ function start_part() {
     score=0;
     currentPartQuestionIndex=0;
     document.getElementById('quit').style.display = 'none';
+    document.getElementById('question').innerHTML = '';
+    document.getElementById('part1-answers').style.display = 'none';
     document.getElementById('score').style.display = 'block';
     current_part_questions=all_questions[part-1];
     get_part_color();
@@ -630,7 +625,7 @@ function start_part() {
     document.getElementById('part2_text').style.display = 'none';
     document.getElementById('titels').style.display = 'block';
     document.getElementById('titels').style.color = titel_color;
-    document.getElementById ("question").innerHTML = "";
+    //document.getElementById ("question").innerHTML = "";
     document.getElementById('titels').innerHTML = "<span style='font-size: 14px;'>"+titels[part-1].round+"</span><br><span style='font-size: 30px;'>"+titels[part-1].titel+"</span>";
     setTimeout(displayQuestion, 2000);
 }
@@ -801,4 +796,4 @@ function TextColor_transition(target_color){
 
 // 其他代码保持不变
 
-displayQuestion();
+start_part();
