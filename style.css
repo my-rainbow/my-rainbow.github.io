@@ -124,7 +124,7 @@ body {
 #buttonNein {
     position: absolute;    
     top: 497px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 221px; /* 距离最近的已定位祖先元素右边 30px */
+    right: 36px; /* 距离最近的已定位祖先元素右边 30px */
     width: 135px;
     height: 77px;
     margin: auto;
@@ -145,14 +145,14 @@ body {
 #buttonA {
     position: absolute;
     top: 442px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    left: 9%;
     width: 320px;
     height: 42px;
     font-size: 14px;
     font-family: Avenir;
     color: black;
     background-color: white;
-    margin: auto;
+    margin: 0 auto;
     border-color: black;
     border-radius: 27px;
     cursor: pointer;
@@ -167,7 +167,7 @@ body {
 #buttonB {
     position: absolute;
     top: 493px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    left: 9%;
     width: 320px;
     height: 42px;
     font-size: 14px;
@@ -189,7 +189,7 @@ body {
 #buttonC {
     position: absolute;
     top: 544px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    left: 9%;
     width: 320px;
     height: 42px;
     font-size: 14px;
@@ -211,7 +211,7 @@ body {
 #buttonD {
     position: absolute;
     top: 595px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 36px; /* 距离最近的已定位祖先元素右边 30px */
+    left: 9%;
     width: 320px;
     height: 42px;
     font-size: 14px;
