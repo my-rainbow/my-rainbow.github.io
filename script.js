@@ -420,7 +420,7 @@ function get_part_color() {
     };}
 // 显示问题的函数
 function displayQuestion() {
-    //document.getElementById('submit_right').style.display = 'block';       
+    document.getElementById('submit_right').style.display = 'block';       
     document.getElementById('quit').style.display = 'block';
     document.getElementById('skip').style.display = 'block';
     document.getElementById('feedback').textContent = "P"+part+", Q"+(currentPartQuestionIndex)+", Score"+score+", passed :"+part_passed;
