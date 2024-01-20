@@ -181,7 +181,7 @@ function show_full_text(text,next_function) {
     var container = document.getElementById('part2_text');
     var i = 0;
     var currentText = '';
-    document.getElementById('skip').style.display = 'block';
+    document.getElementById('skip').style.display = 'none';
     document.getElementById('part2_text').style.display = 'block';
     document.getElementById('quit').style.display = 'none';
     interupted = false;
@@ -215,7 +215,7 @@ function show_pass_text(text,next_function) {
     var container = document.getElementById('pass_text');
     var i = 0;
     var currentText = '';
-    document.getElementById('skip').style.display = 'block';
+    document.getElementById('skip').style.display = 'none';
     container.style.display = 'block';
     document.getElementById('quit').style.display = 'none';
     interupted = false;
@@ -725,10 +725,12 @@ function nextQuestion() {
 
 // 显示结果的函数
 function showResults() {
+    document.getElementById('submit_right').style.display = 'none';     
     document.body.style.backgroundColor = "#F6F6F6";
     document.getElementById('continue_text').style.display = 'none';       
     document.getElementById('score').style.display = 'none';     
     document.getElementById('img_finish').style.display = 'none';  
+    document.getElementById('question').innerHTML = '';
     document.getElementById('part2-answers').style.display = 'none';
     if (part_passed===6) {
         show_full_text(end_text.pass,showResults_passed2); 
