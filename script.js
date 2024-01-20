@@ -149,7 +149,7 @@ function show_part2_text(text,next_function) {
 
     function showNextChar() {
         if (i < text.length) {
-            if(text.charAt(i)==="&"){currentText +="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";i++;}
+            if(text.charAt(i)==="&"){currentText +=blank;i++;}
             currentText += text.charAt(i);
             currentText=currentText.split("\n").slice(-16).join("\n");
             var currentText_list=currentText.split("\n\n");
@@ -190,7 +190,7 @@ function show_full_text(text,next_function) {
 
     function showNextChar() {
         if (i < text.length) {
-            if(text.charAt(i)==="&"){currentText +="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";i++;}
+            if(text.charAt(i)==="&"){currentText +=blank;i++;}
             currentText += text.charAt(i);
             currentText=currentText.split("\n").slice(-16).join("\n");
             var currentText_list=currentText.split("\n\n");
@@ -224,7 +224,7 @@ function show_pass_text(text,next_function) {
 
     function showNextChar() {
         if (i < text.length) {
-            if(text.charAt(i)==="&"){currentText +="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";i++;}
+            if(text.charAt(i)==="&"){currentText +=blank;i++;}
             currentText += text.charAt(i);
             currentText=currentText.split("\n").slice(-16).join("\n");
             var currentText_list=currentText.split("\n\n");
@@ -259,7 +259,7 @@ function show_text(question, kid, papa) {
     function show() {
         if (!paused && i < fullText.length) {
             if (fullText.charAt(i) === "&") {
-                currentText += "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+                currentText += blank;
                 i++;
             } else if (i === num_k) {
                 currentText += '\n\n';
