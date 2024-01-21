@@ -1,4 +1,9 @@
 // 全局变量
+document.getElementById('text').style.left = (window.innerWidth-367)/2+'px';
+document.getElementById('text1').style.left = (window.innerWidth-367)/2+'px';
+document.getElementById('part1_button').style.left = (window.innerWidth-320)/2+'px';
+document.getElementById('part2_button').style.left = (window.innerWidth-320)/2+'px';
+document.getElementById('part3_button').style.left = (window.innerWidth-320)/2+'px';
 
 
 
