@@ -139,13 +139,13 @@ body {
     border-radius: 40px;
     z-index: 6;
 
- 
 }
+
+
 
 #buttonA {
     position: absolute;
     top: 442px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 9%;
     width: 320px;
     height: 42px;
     font-size: 14px;
@@ -167,7 +167,6 @@ body {
 #buttonB {
     position: absolute;
     top: 493px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 9%;
     width: 320px;
     height: 42px;
     font-size: 14px;
@@ -189,7 +188,6 @@ body {
 #buttonC {
     position: absolute;
     top: 544px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 9%;
     width: 320px;
     height: 42px;
     font-size: 14px;
@@ -211,7 +209,6 @@ body {
 #buttonD {
     position: absolute;
     top: 595px; /* 距离最近的已定位祖先元素顶部 50px */
-    left: 9%;
     width: 320px;
     height: 42px;
     font-size: 14px;

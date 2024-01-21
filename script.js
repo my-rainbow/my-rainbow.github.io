@@ -118,6 +118,15 @@ fail:"Auf dem Weg zu unserem \nComing-out sind wir mögli- \ncherweise auf Unver
 if (window.innerWidth>425){var blank="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"}
 else if(window.innerWidth<385){var blank="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"}
 else{var blank="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"}
+
+document.getElementById('buttonA').style.left = (window.innerWidth-320)/2+'px';
+document.getElementById('buttonB').style.left = (window.innerWidth-320)/2+'px';
+document.getElementById('buttonC').style.left = (window.innerWidth-320)/2+'px';
+document.getElementById('buttonD').style.left = (window.innerWidth-320)/2+'px';
+document.getElementById('titels').style.left = (window.innerWidth-361)/2+'px';
+
+
+
 function quit() {
     
     window.location.href = 'start_page.html';} 
@@ -555,7 +564,7 @@ function show_score() {
     } }
 
 function set_button_color() {
-    var part2ButtonsContainer = document.getElementById("part2_button");
+    var part2ButtonsContainer = document.getElementById("part2-answers");
     // 获取这个容器下的所有按钮
     var buttons = part2ButtonsContainer.getElementsByTagName("button");
     // 遍历这些按钮并设置它们的颜色
@@ -565,7 +574,7 @@ function set_button_color() {
     }}
 
 function disableAnswerButtons() {
-    var part2ButtonsContainer = document.getElementById("part2_button");
+    var part2ButtonsContainer = document.getElementById("part2-answers");
     // 获取这个容器下的所有按钮
     var buttons = part2ButtonsContainer.getElementsByTagName("button");
     // 遍历这些按钮并设置它们的颜色
@@ -574,7 +583,7 @@ function disableAnswerButtons() {
     }}
 
 function enableAnswerButtons() {
-    var part2ButtonsContainer = document.getElementById("part2_button");
+    var part2ButtonsContainer = document.getElementById("part2-answers");
     // 获取这个容器下的所有按钮
     var buttons = part2ButtonsContainer.getElementsByTagName("button");
     // 遍历这些按钮并设置它们的颜色

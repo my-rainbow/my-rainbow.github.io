@@ -1,3 +1,4 @@
+document.getElementById('titel').style.left = (window.innerWidth-361)/2+'px';
 const rules = [
     {titel:"Spielhintergrund",rule:"Die Spieler spielen einen\n transparenten Regenbogen.\n    Der Weg des Coming-outs\n von Schwulen ist wie ein\n transparenter Regenbogen \n    auf der Suche nach seinen\n Farben."},
     {titel:"Spielverlauf",rule:"Erste Runde, Ausdruck der\n Selbstidentität. In jeder fol-\n genden Spielrunde müssen \ndie Spieler einen Dialog mit \nden Eltern führen, um mit \n    den verschiedenen Emo-\n    tionen und Fragen umzuge-\nhen, die die Eltern in jeder\n Runde haben könnten."},
