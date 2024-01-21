@@ -21,12 +21,14 @@ body {
 #top {
 position: absolute;
 top: 0px;
-left: 0px;}
+left: 0px;
+width: 100%;}
 
 #bot {
   position: absolute;
   top: 382px;
-  left: 0px;}
+  left: 0px;
+  width: 100%;}
 
 #uebung {
 width:135px;
