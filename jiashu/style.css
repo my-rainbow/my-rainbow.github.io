@@ -105,7 +105,8 @@ body {
 #bot {
     position: absolute;
     top: 382px;
-    left: 0px;}
+    left: 0px;
+width: 100%;}
 
 #part1_button {
     position: absolute;
@@ -123,6 +124,8 @@ body {
     z-index: 12;
     text-align: left;
     color: #121212;
+    padding-left: 21px;
+
 
 
 }
@@ -143,6 +146,7 @@ body {
     z-index: 12;
     text-align: left;
     color: #121212;
+    padding-left: 21px;
 
 
 }
@@ -163,6 +167,8 @@ body {
     z-index: 12;
     text-align: left;
     color: #121212;
+    padding-left: 21px;
+
 
 
 }
