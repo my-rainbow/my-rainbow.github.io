@@ -90,7 +90,7 @@ white-space: pre-line;
 #arrows_next {
   position: absolute;
   top: 520px; /* 距离顶部的距离 */
-  left: 281px; /* 距离左侧的距离 */
+  right: 94px; /* 距离左侧的距离 */
   transform: rotate(180deg);
   width: 17px;
   height: 30.91px;  
