@@ -124,6 +124,8 @@ document.getElementById('buttonB').style.left = (window.innerWidth-320)/2+'px';
 document.getElementById('buttonC').style.left = (window.innerWidth-320)/2+'px';
 document.getElementById('buttonD').style.left = (window.innerWidth-320)/2+'px';
 document.getElementById('titels').style.left = (window.innerWidth-361)/2+'px';
+document.getElementById('continue_text').style.left = (window.innerWidth-361)/2+'px';
+
 
 
 

@@ -106,7 +106,7 @@ body {
     position: absolute;
     top: 382px;
     left: 0px;
-width: 100%;}
+max-width: 100%;}
 
 #part1_button {
     position: absolute;
