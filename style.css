@@ -58,7 +58,6 @@ body {
     left: 13px; /* 距离最近的已定位祖先元素右边 30px */
     width: 400px;
     height: 610px;
-    margin: auto;
     text-align: left;
     white-space: pre-line;
     font-family: Avenir;
