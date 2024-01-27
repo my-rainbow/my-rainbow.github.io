@@ -18,7 +18,7 @@ let question;
 let color_name;
 let background_text_color;
 //每部分起始页的标题
-const titels=[{round:"RUNDE1",titel:"SELBST-\nIDENTIFIKATION"},{round:"RUNDE2",titel:"ABLEHNUNG"},{round:"RUNDE3",titel:"ÄRGER"},{round:"RUNDE4",titel:"VERHANDLUNG"},{round:"RUNDE5",titel:"ENTTÄUSCHUNG"},{round:"RUNDE6",titel:"SORGE"}]
+const titels=[{round:"RUNDE 1",titel:"SELBST-\nIDENTIFIKATION"},{round:"RUNDE 2",titel:"ABLEHNUNG"},{round:"RUNDE 3",titel:"ÄRGER"},{round:"RUNDE 4",titel:"VERHANDLUNG"},{round:"RUNDE 5",titel:"ENTTÄUSCHUNG"},{round:"RUNDE 6",titel:"SORGE"}]
 //第一部分问题 （ja nein frage）
 const introduction= "&Papa, Mama... \n&Ich habe euch etwas Wich- \n&tiges zu sagen. Es ist ein \n&Geheimnis, das seit vielen \n&Jahren in meinem Herzen \n&verborgen ist...\n\nWas ist denn los, \nmein Sohn?\n\n&Ich habe mich immer an \n&eure Liebe und Unterstüt- \n&zung erinnert, seit ich ein \n&Kind war... Ich bin sehr \n&glücklich, in dieser Familie \n&zu leben. Ich werde euch \n&und unsere Familie immer \n&lieben, und Ich weiß auch, \n&dass ihr wollt, dass ich \n&glücklich bin. Also...\n\nNa und? Mach dir keine \nSorgen, mein Sohn, sprich \nmit Mama und Papa.\n\n&Also, Ich will euch mal was \n&klar machen. Ihr habt euch \n&immer Sorgen gemacht, \n&wann ich eine Freundin \n&habe, wann ich heirate. Ich \n&habe sie mit verschiedenen \n&Ausreden gemieden. Aber \n&ich möchte euren Fragen \n&nicht mehr ausweichen. Es \n&ist wahr, dass ich nun keine \n&Freundin haben werde und \n&ich will nicht heiraten, weil \n&ich schwul bin und Männer \n&mag.\n\n...";
 const part1Questions = [
