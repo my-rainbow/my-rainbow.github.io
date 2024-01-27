@@ -8,9 +8,17 @@
             font-family: AvenirH;
             src: url('Avenir Heavy.ttf') 
         }
+        html, body {
+            height: 100%; /* 确保 html 和 body 元素的高度填满视口 */
+            margin: 0; /* 移除默认的边距 */
+            padding: 0; /* 移除默认的内边距 */
+        }
         body {
             background-image: url("pass_background.png");
-            background-size: cover;
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 100%;
+
         };
         
         #top {
