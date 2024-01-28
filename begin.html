@@ -8,11 +8,16 @@
             font-family: AvenirH;
             src: url('Avenir Heavy.ttf') 
         }
+        html, body {
+            width: 100%; /* 确保 html 和 body 元素的高度填满视口 */
+            margin: 0; /* 移除默认的边距 */
+            padding: 0; /* 移除默认的内边距 */
+        }
         .scrolling-background {
             width: 393px;
             height: 4114px; /* 根据需要设置高度 */
             background-image: url('image1.jpg'); /* 使用两份相同的图片 */
-            object-fit: cover;
+            background-size: cover;
             animation: scroll 2s linear infinite;
         }
 
@@ -31,7 +36,6 @@
             box-shadow: 0px 2px 6px 0px rgba(199, 199, 199, 0.1);
             font-family: AvenirH;
             font-size: 25px;
-            font-weight: 800;
             line-height: 77px;
             letter-spacing: 0em;
             text-align: center;
