@@ -9,12 +9,12 @@
             src: url('Avenir Heavy.ttf') 
         }
         html, body {
-            width: 100%; /* 确保 html 和 body 元素的高度填满视口 */
+            width: 393px; /* 确保 html 和 body 元素的高度填满视口 */
             margin: 0; /* 移除默认的边距 */
             padding: 0; /* 移除默认的内边距 */
         }
         .scrolling-background {
-            width: 393px;
+            width: 100%;
             height: 4114px; /* 根据需要设置高度 */
             background-image: url('image1.jpg'); /* 使用两份相同的图片 */
             background-size: cover;
@@ -25,12 +25,15 @@
             0% { background-position: 0px 0px; }
             100% { background-position: 0px -4114px; } /* 这里的百分比取决于背景图片的大小 */
         }
+
+
         #start{
             width: 135px;
             height: 77px;
-            position: absolute;
-            top: 606px;
-            left: 129px;
+            position: relative;
+            left: 50%;
+            margin-left: -67.5px;
+            top: 546px;
             border-radius: 40px;
             background: #FFFFFF;
             box-shadow: 0px 2px 6px 0px rgba(199, 199, 199, 0.1);
@@ -40,15 +43,22 @@
             letter-spacing: 0em;
             text-align: center;
 }
+        #my_rainbow{
+            position: relative;
+            left: 50%;
+            margin-left: -90px;
+            top: 169px;
+            width:180px;
+            height:90.5px;
+        }
     </style>
 </head>
 <body>
-    <div class="scrolling-background"></div>
-    <img src="start_button.png" style="width:180px;height:90.5px;position: absolute;top: 229px;left: 107px">
-    <div id="start" onclick="location.href = 'start_page.html';">START</div>
-<script>
-    document.getElementsByClassName('scrolling-background').style.width = window.innerWidth+'px';
-</script>
+    <div class="scrolling-background">
+        <img id="my_rainbow" src="start_button.png">
+        <div id="start" onclick="location.href = 'start_page.html';">START</div>
+    </div>
+
 </body>
 
 </html>
