@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频背景</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .video-background {
+            position: fixed; /* 使用固定定位 */
+            right: 0;
+            bottom: 0;
+            min-width: 100%; /* 确保视频宽度至少与视口一样宽 */
+            min-height: 100%; /* 确保视频高度至少与视口一样高 */
+            width: auto;
+            height: auto;
+            z-index: -1; /* 将视频置于内容之后 */
+            overflow: hidden; /* 隐藏溢出的部分 */
+        }
+        #start{
+            width: 135px;
+            height: 77px;
+            position: absolute;
+            top: 606px;
+            left: 129px;
+            border-radius: 40px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px 0px rgba(199, 199, 199, 0.1);
+            font-family: Avenir;
+            font-size: 25px;
+            font-weight: 800;
+            line-height: 77px;
+            letter-spacing: 0em;
+            text-align: center;
+}
+    </style>
+</head>
+<body>
+    <img src="start_button.png" style="width:180px;height:90.5px;position: absolute;top: 229px;left: 107px">
+    <div id="start" onclick="location.href = 'start_page.html';">START</div>
+<video autoplay muted loop class="video-background">
+    <source src="video.mp4" type="video/mp4">
+    您的浏览器不支持视频标签。
+</video>
+
+<div>
+    <!-- 页面的其他内容 -->
+</div>
+
+</body>
+</html>
