@@ -9,11 +9,10 @@
             src: url('Avenir Heavy.ttf') 
         }
         .scrolling-background {
-            width: 100%;
+            width: 393px;
             height: 4114px; /* 根据需要设置高度 */
             background-image: url('image1.jpg'); /* 使用两份相同的图片 */
-            background-size: cover;
-            overflow: hidden; 
+            object-fit: cover;
             animation: scroll 2s linear infinite;
         }
 
@@ -43,6 +42,9 @@
     <div class="scrolling-background"></div>
     <img src="start_button.png" style="width:180px;height:90.5px;position: absolute;top: 229px;left: 107px">
     <div id="start" onclick="location.href = 'start_page.html';">START</div>
-
+<script>
+    document.getElementsByClassName('scrolling-background').style.width = window.innerWidth+'px';
+</script>
 </body>
+
 </html>
