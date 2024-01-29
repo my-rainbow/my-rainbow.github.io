@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>视频背景</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pass</title>
     <style>
         @font-face {
             font-family: AvenirH;
             src: url('Avenir Heavy.ttf') 
         }
         html, body {
-            width: 393px; /* 确保 html 和 body 元素的高度填满视口 */
+            height: 100%; /* 确保 html 和 body 元素的高度填满视口 */
             margin: 0; /* 移除默认的边距 */
             padding: 0; /* 移除默认的内边距 */
         }
-        .scrolling-background {
-            width: 100%;
-            height: 4114px; /* 根据需要设置高度 */
-            background-image: url('image1.jpg'); /* 使用两份相同的图片 */
-            background-size: cover;
-            animation: scroll 2s linear infinite;
-        }
-
-        @keyframes scroll {
-            0% { background-position: 0px 0px; }
-            100% { background-position: 0px -4114px; } /* 这里的百分比取决于背景图片的大小 */
-        }
-
 
         #start{
             width: 135px;
@@ -51,6 +38,18 @@
             width:180px;
             height:90.5px;
         }
+        .scrolling-background {
+            width: 100%;
+            height: 4114px; /* 根据需要设置高度 */
+            background-image: url('image1.jpg'); /* 使用两份相同的图片 */
+            background-size: cover;
+            animation: scroll 2s linear infinite;
+        }
+        @keyframes scroll {
+            0% { background-position: 0px 0px; }
+            100% { background-position: 0px -4114px; } /* 这里的百分比取决于背景图片的大小 */
+        }
+
     </style>
 </head>
 <body>
@@ -58,7 +57,9 @@
         <img id="my_rainbow" src="start_button.png">
         <div id="start" onclick="location.href = 'start_page.html';">START</div>
     </div>
+    
+<script>
 
+    </script>
 </body>
-
 </html>
