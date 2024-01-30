@@ -17,6 +17,7 @@ let text_color;
 let question;
 let color_name;
 let background_text_color;
+let color_name_en;
 //每部分起始页的标题
 const titels=[{round:"RUNDE 1",titel:"SELBST-\nIDENTIFIKATION"},{round:"RUNDE 2",titel:"ABLEHNUNG"},{round:"RUNDE 3",titel:"ÄRGER"},{round:"RUNDE 4",titel:"VERHANDLUNG"},{round:"RUNDE 5",titel:"ENTTÄUSCHUNG"},{round:"RUNDE 6",titel:"SORGE"}]
 //第一部分问题 （ja nein frage）
@@ -127,6 +128,15 @@ document.getElementById('titels').style.left = (window.innerWidth-361)/2+'px';
 document.getElementById('continue_text').style.left = (window.innerWidth-361)/2+'px';
 
 
+function music_play() {
+    document.getElementById('myAudio').play();
+    document.getElementById('music').src = '点击后/'+color_name_en+'.png';
+    document.getElementById('music').setAttribute("onclick", "music_pause()");}
+
+function music_pause() {
+    document.getElementById('myAudio').pause();
+    document.getElementById('music').src = '点击前/'+color_name_en+'.png';
+    document.getElementById('music').setAttribute("onclick", "music_play()");}
 
 
 function quit() {
@@ -312,6 +322,7 @@ function get_part_color() {
             current_part_color = '#FFC300';      
             text_color = '#503A00';
             color_name = 'Gelb';
+            color_name_en = 'yellow';
             shadow_color_ja='0px 2px 6px 0px rgba(103, 75, 0, 0.3)';
             shadow_color_nein='0px 2px 6px 0px rgba(191, 139, 0, 0.1)';
             document.getElementById('quit').src = 'arrow_yellow.png';
@@ -331,6 +342,7 @@ function get_part_color() {
             current_part_color = '#33A9FF';  
             text_color = '#002E50';
             color_name = 'Blau';
+            color_name_en = 'blue';
             shadow_color_ja='0px 1px 4px 0px rgba(26, 93, 142, 0.25)';
             shadow_color_nein='0px 1px 5px 0px rgba(0, 111, 193, 0.1)';
             document.getElementById('quit').src = 'arrow_blue.png';
@@ -351,6 +363,7 @@ function get_part_color() {
             current_part_color = '#FF3333';  
             text_color = '#500000';
             color_name = 'Rot';
+            color_name_en = 'red';
             shadow_color_ja='0px 1px 5px 0px rgba(80, 0, 0, 0.25)';
             shadow_color_nein='0px 1px 5px 0px rgba(189, 0, 0, 0.1)';
             document.getElementById('quit').src = 'arrow_red.png';
@@ -370,7 +383,8 @@ function get_part_color() {
             titel_color = '#012D17';
             current_part_color = '#00A351';                
             text_color = '#012D17';
-            color_name = 'Grün';
+            color_name = 'green';
+            color_name_en = 'yellow';
             shadow_color_ja='0px 1px 5px 0px rgba(1, 45, 23, 0.25)';
             shadow_color_nein='0px 1px 5px 0px rgba(0, 140, 70, 0.1)';
             document.getElementById('quit').src = 'arrow_green.png';
@@ -391,6 +405,7 @@ function get_part_color() {
             current_part_color = '#770088';               
             text_color = '#29002F';
             color_name = 'Lila';
+            color_name_en = 'lila';
             shadow_color_ja='0px 1px 5px 0px rgba(41, 0, 47, 0.3)';
             shadow_color_nein='0px 1px 5px 0px rgba(96, 0, 110, 0.1)';
             document.getElementById('quit').src = 'arrow_lila.png';
@@ -412,6 +427,7 @@ function get_part_color() {
             current_part_color = '#FF7400';            
             text_color = '#4F2400';
             color_name = 'Orange';
+            color_name_en = 'orange';
             shadow_color_ja='0px 1px 5px 0px rgba(107, 49, 0, 0.3)';
             shadow_color_nein='0px 1px 5px 0px rgba(140, 64, 0, 0.1)';
             document.getElementById('quit').src = 'arrow_orange.png';
