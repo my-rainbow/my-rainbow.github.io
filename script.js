@@ -165,6 +165,8 @@ function show_part2_text(text,next_function) {
     document.getElementById('skip').style.display = 'block';
     document.getElementById('part2_text').style.display = 'block';
     document.getElementById('quit').style.display = 'none';
+    document.getElementById('music').style.display = 'none';
+
     document.body.style.backgroundColor = '#FFFFFF';
     interupted = false;
 
@@ -208,6 +210,8 @@ function show_full_text(text,next_function) {
     document.getElementById('skip').style.display = 'none';
     document.getElementById('part2_text').style.display = 'block';
     document.getElementById('quit').style.display = 'none';
+    document.getElementById('music').style.display = 'none';
+
     interupted = false;
 
     function showNextChar() {
@@ -241,7 +245,7 @@ function show_pass_text(text,next_function) {
     var currentText = '';
     document.getElementById('skip').style.display = 'none';
     container.style.display = 'block';
-    document.getElementById('quit').style.display = 'none';
+    document.getElementById('music').style.display = 'none';
     interupted = false;
 
     function showNextChar() {
@@ -452,6 +456,7 @@ function get_part_color() {
 function displayQuestion() {
     document.getElementById('submit_right').style.display = 'block';       
     document.getElementById('quit').style.display = 'block';
+    document.getElementById('music').style.display = 'block';
     document.getElementById('skip').style.display = 'block';
     document.getElementById('feedback').textContent = "P"+part+", Q"+(currentPartQuestionIndex)+", Score"+score+", passed :"+part_passed+"size:"+window.innerWidth;
     question = current_part_questions[currentPartQuestionIndex];
@@ -612,6 +617,7 @@ function enableAnswerButtons() {
 
 function finish_part() {
     document.getElementById('quit').style.display = 'none';
+    document.getElementById('music').style.display = 'none';
     document.getElementById('submit_right').style.display = 'none';       
     document.getElementById('skip').style.display = 'none';
     document.getElementById('question').style.display = 'none';
@@ -643,6 +649,7 @@ function start_part() {
     score=0;
     currentPartQuestionIndex=0;
     document.getElementById('quit').style.display = 'none';
+    document.getElementById('music').style.display = 'none';
     document.getElementById('question').innerHTML = '';
     document.getElementById('part1-answers').style.display = 'none';
     document.getElementById('score').style.display = 'block';
