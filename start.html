@@ -20,6 +20,7 @@
             position: relative;
             left: 50%;
             margin-left: -67.5px;
+            position: absolute;
             top: 497px;
             border-radius: 40px;
             background: #FFFFFF;
@@ -34,7 +35,8 @@
             position: relative;
             left: 50%;
             margin-left: -90px;
-            top: 169px;
+            position: absolute;
+            top: 120px;
             width:180px;
             height:90.5px;
         }
@@ -55,12 +57,22 @@
 </head>
 <body>
     <div class="scrolling-background">
-        
         <img id="my_rainbow" src="start_button.png">
-        <div id="start" onclick="location.href = 'start_page.html';">START</div>
+        <div id="start" onclick="click_button ();">START</div>
     </div>
 <script>
+    function go_uebung() {
+    window.location.href = 'start_page.html';} 
 
+    function click_button () {
+        var button = document.getElementById('start');
+        button.style.backgroundColor = "#121212";
+        button.style.color = "#FFFFFF";
+        button.style.boxShadow = "0px 2px 6px 0px rgba(100, 100, 100, 0.3)";
+        setTimeout(go_uebung, 300);
+
+    }
+    </script>
     </script>
 </body>
 </html>
