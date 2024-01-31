@@ -397,7 +397,7 @@ function get_part_color() {
             current_part_color = '#00A351';                
             text_color = '#012D17';
             color_name = 'green';
-            color_name_en = 'yellow';
+            color_name_en = 'green';
             shadow_color_ja='0px 1px 5px 0px rgba(1, 45, 23, 0.25)';
             shadow_color_nein='0px 1px 5px 0px rgba(0, 140, 70, 0.1)';
             document.getElementById('quit').src = 'arrow_green.png';
