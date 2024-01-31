@@ -18,6 +18,7 @@ let question;
 let color_name;
 let background_text_color;
 let color_name_en;
+let music_status;
 //每部分起始页的标题
 const titels=[{round:"RUNDE 1",titel:"SELBST-\nIDENTIFIKATION"},{round:"RUNDE 2",titel:"ABLEHNUNG"},{round:"RUNDE 3",titel:"ÄRGER"},{round:"RUNDE 4",titel:"VERHANDLUNG"},{round:"RUNDE 5",titel:"ENTTÄUSCHUNG"},{round:"RUNDE 6",titel:"SORGE"}]
 //第一部分问题 （ja nein frage）
@@ -131,12 +132,20 @@ document.getElementById('continue_text').style.left = (window.innerWidth-361)/2+
 function music_play() {
     document.getElementById('myAudio').play();
     document.getElementById('music').src = '点击后/'+color_name_en+'.png';
-    document.getElementById('music').setAttribute("onclick", "music_pause()");}
+    document.getElementById('music').setAttribute("onclick", "music_pause()");
+    music_status = 1;}
 
 function music_pause() {
     document.getElementById('myAudio').pause();
     document.getElementById('music').src = '点击前/'+color_name_en+'.png';
-    document.getElementById('music').setAttribute("onclick", "music_play()");}
+    document.getElementById('music').setAttribute("onclick", "music_play()");
+    music_status = 0;}
+function show_music_button() {
+    if (music_status == 0) {    
+        document.getElementById('music').src = '点击前/'+color_name_en+'.png';}
+    else {document.getElementById('music').src = '点击后/'+color_name_en+'.png';}}
+
+
 
 
 function quit() {
@@ -655,6 +664,7 @@ function start_part() {
     document.getElementById('score').style.display = 'block';
     current_part_questions=all_questions[part-1];
     get_part_color();
+    show_music_button() ;
     show_score();
     document.body.style.backgroundColor = background_color;
     document.getElementById('skip').style.display = 'none';
