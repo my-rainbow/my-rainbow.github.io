@@ -18,7 +18,7 @@ let question;
 let color_name;
 let background_text_color;
 let color_name_en;
-let music_status;
+let music_status=0;
 //每部分起始页的标题
 const titels=[{round:"RUNDE 1",titel:"SELBST-\nIDENTIFIKATION"},{round:"RUNDE 2",titel:"ABLEHNUNG"},{round:"RUNDE 3",titel:"ÄRGER"},{round:"RUNDE 4",titel:"VERHANDLUNG"},{round:"RUNDE 5",titel:"ENTTÄUSCHUNG"},{round:"RUNDE 6",titel:"SORGE"}]
 //第一部分问题 （ja nein frage）
