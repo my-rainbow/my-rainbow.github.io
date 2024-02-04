@@ -16,6 +16,9 @@ let end_px=6700;
 
 
 function click_scroll(part) {
+    document.getElementById('quit').style.display="none";
+    document.getElementById('back').style.display="block";
+
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     document.getElementById('feedback').textContent = scrollPosition;
     document.getElementById('score').style.display ='block';
