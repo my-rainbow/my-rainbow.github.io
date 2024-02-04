@@ -1,40 +1,78 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Rainbow</title>
-    <link rel="stylesheet" type="text/css" href="start_page.css">
+    <title>Pass</title>
+    <style>
+        @font-face {
+            font-family: AvenirH;
+            src: url('Avenir Heavy.ttf') 
+        }
+        html, body {
+            height: 100%; /* 确保 html 和 body 元素的高度填满视口 */
+            margin: 0; /* 移除默认的边距 */
+            padding: 0; /* 移除默认的内边距 */
+        }
+
+        #start{
+            width: 135px;
+            height: 77px;
+            position: relative;
+            left: 50%;
+            margin-left: -67.5px;
+            position: absolute;
+            top: 497px;
+            border-radius: 40px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px 0px rgba(199, 199, 199, 0.1);
+            font-family: AvenirH;
+            font-size: 25px;
+            line-height: 77px;
+            letter-spacing: 0em;
+            text-align: center;
+}
+        #my_rainbow{
+            position: relative;
+            left: 50%;
+            margin-left: -90px;
+            position: absolute;
+            top: 120px;
+            width:180px;
+            height:90.5px;
+        }
+        .scrolling-background {
+            width: 100%;
+            height: 3920px; /* 根据需要设置高度 */
+            background-image: url('image2.jpg'); /* 使用两份相同的图片 */
+            background-size: cover; /* 调整这里 */
+            animation: scroll 2s linear infinite;
+            margin: 0px;
+            padding: 0px;
+        }
+        @keyframes scroll {
+            0% { background-position: 0px 0px; }
+            100% { background-position: 0px -3920px; }} /* 这里的百分比取决于背景图片的大小 */
+
+    </style>
 </head>
-<body >
-    <!-- <audio src="BGM.MP3" autoplay loop></audio>-->
-    <div id="uebung"  onclick="click_button('uebung')">ÜBUNG</div>
-    <div id="jiashu" onclick="click_button('jiashu')">家书</div>
-    <img id="top" src="top.png">
-    <img id="bot" src="bot.png">
-
+<body>
+    <div class="scrolling-background">
+        <img id="my_rainbow" src="start_button.png">
+        <div id="start" onclick="click_button ();">START</div>
+    </div>
 <script>
-    document.getElementById('uebung').style.left = (window.innerWidth-135)/2+'px';
-    document.getElementById('jiashu').style.left = (window.innerWidth-135)/2+'px';
-
     function go_uebung() {
-    window.location.href = 'rule.html';} 
-    function go_jiashu() {
-    window.location.href = 'jiashu/index.html';} 
-    function click_button (id) {
-        var button = document.getElementById(id);
+    window.location.href = 'start.html';} 
+
+    function click_button () {
+        var button = document.getElementById('start');
         button.style.backgroundColor = "#121212";
         button.style.color = "#FFFFFF";
         button.style.boxShadow = "0px 2px 6px 0px rgba(100, 100, 100, 0.3)";
-        if (id == "uebung") {
-            setTimeout(go_uebung, 300);
-        } else {
-            setTimeout(go_jiashu, 300);
-        }
+        setTimeout(go_uebung, 300);
 
     }
-
-
-</script>
+    </script>
+    </script>
 </body>
 </html>
-

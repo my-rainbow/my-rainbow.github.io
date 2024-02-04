@@ -47,7 +47,7 @@ function next_rule(){
 
 function previous_rule(){
     if(i==0){
-        window.location.href = 'start_page.html';}
+        window.location.href = 'start.html';}
     i--;
     display_rule();
 
